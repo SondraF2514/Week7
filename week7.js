@@ -31,11 +31,13 @@ console.log("minusAge push", minusAgepush);
 
 //Use a loop to iterate through the array and calculate the average age.
 let sumOfAges = 0;
-for(let i = 0; i < ages.length; 1++){
-//console.log(i, "test");
+for(let i = 0; i < ages.length; i++){
+    sumOfAges =+ ages[i];
+    console.log ("index", i, "sumOfAges", sumOfAges); 
+    //console.log(i, "test");
 }
-sumOfAges =+ ages[i];
-console.log ("index", i, "sumOfAges", sumOfAges);
+
+
 console.log ("Total sum", sumOfAges);
 let average = sumOfAges / ages.length
 console.log ("Average", average);
@@ -126,13 +128,13 @@ sumNumbersArray(numbers2)
 //Write a function that takes an array of numbers and returns the average of all the elements in the array.
 function calculateNumbersAverageArray(array){
     let total = 0;
-}
-for (let i = 0; i <array.lenght; i++){
+
+for (let i = 0; i <array.length; i++){
     //console.log ("Test", test);
     total += array[i];
     console.log ("Calculate Function Total", total);
 
-    let average = total/array.length;{
+    let average = total/array.length;
     console.log("Average of Numbers", average);
     return average;
     }
@@ -147,7 +149,7 @@ function twoAverages(array1, array2){
     let total2 = 0;
     console.log("Parameters:", array1, array2);
 
-    twoAverages(numbers3, numbers4);
+  
     for (const number of array1){
         total1 = number
         console.log("current Number Loop1:", number, "Total1:", total1);
@@ -157,6 +159,7 @@ for(const number of array2){
     console.log("Current Number Loop 2;", number, "Total2:", total2);
 
 }
+
 let average1 = total1 / array1.length;
 let average2 = total2 / array2.length;
 console.log("Averages", array1, array2);
@@ -184,3 +187,12 @@ willBuyDrink(true,11)
 
 //Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
+//This problem is not a problem as much as a challenge.  I want to have my web page provide a greeting, and so I am practicing how to do it.
+
+function greetUser(name) {
+    return "Hello " + name + "!";   
+  }
+  
+  let greetingMessage = greetUser("Sondra");
+  
+  console.log(greetingMessage); // "Hello Sondra!"
